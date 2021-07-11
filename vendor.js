@@ -18,7 +18,7 @@ const interval = setInterval(function () {
 // setTimeout(()=>{
 //   clearInterval(interval)
 // },8000)
-//try.........
+//try..
 
 
 event.on('delivered', deliveredHandler);
