@@ -15,6 +15,10 @@ const interval = setInterval(function () {
   event.emit('pickup', order);
 }, 5000);
 // clearInterval(interval);
+// setTimeout(()=>{
+//   clearInterval(interval)
+// },8000)
+//try.........
 
 
 event.on('delivered', deliveredHandler);
