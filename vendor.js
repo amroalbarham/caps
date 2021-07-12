@@ -1,10 +1,12 @@
 'use strict';
+
+
 require('dotenv').config();
 const event = require('./events');
 const faker = require('faker');
 const uuid = require('uuid').v4;
 
-const interval = setInterval(function () {
+// const interval = setInterval(function () {
   // event.emit('pickup', order);
   let order = {
     sotoreName: process.env.STORE,
@@ -13,7 +15,7 @@ const interval = setInterval(function () {
     address: faker.address.streetAddress(),
   }
   event.emit('pickup', order);
-}, 5000);
+// }, 5000);
 // clearInterval(interval);
 // setTimeout(()=>{
 //   clearInterval(interval)
